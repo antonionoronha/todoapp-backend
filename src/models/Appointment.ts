@@ -19,12 +19,18 @@ class Appointment {
   @Column('varchar')
   provider_id: string;
 
+  @Column('varchar')
+  title: string;
+
+  @Column('varchar')
+  status: string;
+
   @ManyToOne(() => User)
   @JoinColumn({ name: 'provider_id' })
   provider: User;
 
   @Column('timestamp with time zone')
-  date: Date;
+  deadline: Date;
 
   @CreateDateColumn()
   created_at: Date;

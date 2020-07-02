@@ -4,7 +4,7 @@ export default class CreateAppointments1593116742042
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
-      new Table({
+      new Table({ 
         name: 'appointments',
         columns: [
           {
@@ -19,7 +19,15 @@ export default class CreateAppointments1593116742042
             type: 'varchar',
           },
           {
-            name: 'date',
+            name: 'title',
+            type: 'varchar',
+          },
+          {
+            name: 'status',
+            type: 'varchar',
+          },
+          {
+            name: 'deadline',
             type: 'timestamp with time zone',
           },
           {

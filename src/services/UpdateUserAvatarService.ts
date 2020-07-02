@@ -34,7 +34,7 @@ class UpdateUserAvatarService {
     user.avatar = avatarFilename;
 
     await usersRepository.save(user);
-
+ 
     return user;
   }
 }

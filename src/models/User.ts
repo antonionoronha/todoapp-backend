@@ -21,8 +21,11 @@ class User {
   @Column('varchar')
   password: string;
 
-  @Column('varchar')
+  @Column('varchar', {nullable:true})
   avatar: string;
+
+  @Column('varchar')
+  phone: string;
 
   @CreateDateColumn()
   created_at: Date;
