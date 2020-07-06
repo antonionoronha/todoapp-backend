@@ -5,6 +5,8 @@ import authConfig from '../config/auth';
 
 import AppError from '../errors/AppError';
 
+//garantir a autenticação do user
+
 interface TokenPayload {
   iat: number;
   exp: number;

@@ -17,6 +17,8 @@ interface Response {
   token: string;
 }
 
+//autenticação do usuário
+
 class AuthencticateUserService {
   public async execute({ email, password }: Request): Promise<Response> {
     const usersRepository = getRepository(User);

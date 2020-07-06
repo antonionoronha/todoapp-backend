@@ -7,6 +7,8 @@ import UpdateUserAvatarService from '../services/UpdateUserAvatarService';
 
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
+//rotas do usuário
+
 const usersRouter = Router();
 const upload = multer(uploadConfig);
 

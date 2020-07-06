@@ -10,3 +10,5 @@ class Error {
 }
 
 export default Error;
+
+//handle errors

@@ -12,6 +12,8 @@ interface Request {
   avatarFilename: string;
 }
 
+//criar a opção de cadastro de um avatar
+
 class UpdateUserAvatarService {
   public async execute({ user_id, avatarFilename }: Request): Promise<User> {
     const usersRepository = getRepository(User);

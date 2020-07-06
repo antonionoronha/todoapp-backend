@@ -4,6 +4,8 @@ import AuthenticateUserService from '../services/AuthenticateUserService';
 
 const sessionsRouter = Router();
 
+//rotas da sessão
+
 sessionsRouter.post('/', async (request, response) => {
   const { email, password } = request.body;
 

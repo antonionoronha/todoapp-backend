@@ -5,6 +5,8 @@ import {
   TableForeignKey,
 } from 'typeorm';
 
+//mudando o provider_id
+
 export default class AlterProviderToProviderId1593125475938
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {

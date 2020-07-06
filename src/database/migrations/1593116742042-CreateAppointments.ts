@@ -1,5 +1,7 @@
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
+//migration para criação de usuário
+
 export default class CreateAppointments1593116742042
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {

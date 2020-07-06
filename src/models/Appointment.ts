@@ -11,6 +11,8 @@ import {
 
 import User from './User';
 
+//definição do modelo de apontamento
+
 @Entity('appointments')
 class Appointment {
   @PrimaryGeneratedColumn('uuid')
