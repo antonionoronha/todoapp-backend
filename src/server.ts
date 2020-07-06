@@ -10,7 +10,19 @@ import AppError from './errors/AppError';
 
 import './database';
 
+//var express = require('express')
+var cors = require('cors')
+
 const app = express();
+
+app.use(cors()) //Essa linha aqui
+
+var corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200
+}
+
+app.use(cors(corsOptions))
 
 app.use(express.json());
 app.use('/files', express.static(uploadConfig.directory));

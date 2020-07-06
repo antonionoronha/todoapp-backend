@@ -3,9 +3,9 @@ import Appointment from '../models/Appointment';
 
 @EntityRepository(Appointment)
 class AppointmentsRepository extends Repository<Appointment> {
-  public async findByDate(date: Date): Promise<Appointment | null> {
+  public async findByDate(deadline: Date): Promise<Appointment | null> {
     const findAppointement = await this.findOne({
-      where: { date },
+      where: { deadline },
     });
 
     return findAppointement || null;
